@@ -1,10 +1,8 @@
-# ExpenseTracker :innocent:
+# Social Media
 
 <br>
 
-***This is a system to calculate the expenses of the student*** :taxi:
 
-<br>
 
 
 # :star:Steps :star:
