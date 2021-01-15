@@ -23,14 +23,8 @@
         <div class="block lg:hidden">
           <button
             id="hamburger"
-            class="flex items-center px-3 py-2 border-2 rounded text-blue-700 border-blue-700 hover:text-blue-700 hover:border-blue-700 toggle block"
+            class="flex items-center px-3 py-2 border-2 rounded text-blue-700 border-blue-700 hover:text-blue-700 hover:border-blue-700 "
           >
-            <img
-              class="toggle hidden"
-              src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
-              width="40"
-              height="40"
-            />
             <svg
               class="fill-current h-3 w-3"
               viewBox="0 0 20 20"
@@ -192,7 +186,7 @@
         
         <div class="">
           <div class="">
-            <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
             obcaecati nobis commodi, ratione iusto dolore explicabo, totam nemo
             at, neque quisquam consectetur. Recusandae mollitia animi vero
             suscipit laudantium commodi. Aliquam. Lorem ipsum dolor sit amet
