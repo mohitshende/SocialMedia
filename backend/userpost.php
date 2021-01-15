@@ -17,5 +17,8 @@ if($num>0){
 
     }
 }
+else{
+    echo "<h2>No Posts To Display</h2>";
+}
 
 ?>
