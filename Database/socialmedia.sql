@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 15, 2021 at 10:00 AM
+-- Generation Time: Jan 15, 2021 at 01:26 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `expense`
+-- Database: `socialmedia`
 --
 
 -- --------------------------------------------------------
@@ -44,6 +44,26 @@ INSERT INTO `posts` (`sr no`, `message`, `time`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `rnrathod@mitaoe.ac.in`
+--
+
+CREATE TABLE `rnrathod@mitaoe.ac.in` (
+  `sr no` int(11) NOT NULL,
+  `message` text NOT NULL,
+  `time` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `rnrathod@mitaoe.ac.in`
+--
+
+INSERT INTO `rnrathod@mitaoe.ac.in` (`sr no`, `message`, `time`) VALUES
+(1, 'This is seperate Page of Ritesh', '2021-01-15 09:45:51'),
+(2, 'Hello Everyone Welcome to Social', '2021-01-15 12:20:33');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -58,10 +78,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`srno.`, `email`, `password`) VALUES
-(2, 'rt@gmail.com', 'riew'),
-(3, 's@gmail.com', 's'),
-(4, 'mohit@g.com', 'm'),
-(5, 'abhishek@gmail.com', 'a');
+(8, 'rnrathod@mitaoe.ac.in', 'r');
 
 --
 -- Indexes for dumped tables
@@ -71,6 +88,12 @@ INSERT INTO `user` (`srno.`, `email`, `password`) VALUES
 -- Indexes for table `posts`
 --
 ALTER TABLE `posts`
+  ADD PRIMARY KEY (`sr no`);
+
+--
+-- Indexes for table `rnrathod@mitaoe.ac.in`
+--
+ALTER TABLE `rnrathod@mitaoe.ac.in`
   ADD PRIMARY KEY (`sr no`);
 
 --
@@ -87,13 +110,19 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `sr no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `sr no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+
+--
+-- AUTO_INCREMENT for table `rnrathod@mitaoe.ac.in`
+--
+ALTER TABLE `rnrathod@mitaoe.ac.in`
+  MODIFY `sr no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `srno.` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `srno.` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

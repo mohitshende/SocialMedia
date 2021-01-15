@@ -19,6 +19,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
             if($fetch['email']==$email && $fetch['password']==$password){
                 session_start();
                           $_SESSION['email']=$email;
+
+                        //   $set=$_SESSION['email'];
                           
 
                 echo "<script>window.location.href='user.php'</script>";
@@ -28,6 +30,9 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
             }
         }
 
+    }
+    else{
+        echo "You Dont Have any Account Please Create it";
     }
 }
 

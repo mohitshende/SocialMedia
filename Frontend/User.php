@@ -1,3 +1,8 @@
+<?php 
+        
+        include "../backend/post.php";
+        ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -170,9 +175,9 @@
                   </div>
                 </div>
                 <div class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 mx-6">
-        <?php 
+                <?php 
         
-        include "../backend/post.php";
+        include "../backend/userpost.php";
         ?>
         
         </div>
