@@ -29,6 +29,10 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         else{
             echo "Please try again";
         }
+
+        $s="CREATE TABLE `expense`.`$email` ( `sr no` INT NOT NULL AUTO_INCREMENT ,  `message` TEXT NOT NULL ,  `time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,    PRIMARY KEY  (`sr no`)) ENGINE = InnoDB;";
+   
+        $exe=mysqli_query($con,$s);
     }
 
 }
