@@ -4,7 +4,7 @@
 $severname="localhost";
 $username="root";
 $password="";
-$database="expense";
+$database="socialMedia";
 
 $con=mysqli_connect($severname,$username,$password,$database);
 

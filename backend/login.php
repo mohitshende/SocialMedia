@@ -31,6 +31,9 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         }
 
     }
+    else{
+        echo "You Dont Have any Account Please Create it";
+    }
 }
 
 
