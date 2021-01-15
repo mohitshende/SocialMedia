@@ -113,7 +113,7 @@
     <!-- Navbar ends here -->
 
     <!-- Main content -->
-    <main>
+    <main style="background-color:white;">
       <div class="">
         <div class="">
           <div class="">
@@ -134,6 +134,7 @@
             id.
           </div>
         </div>
+        
         <div class="">
           <section class="text-gray-600 body-font relative">
             <div class="container px-5 py-24 mx-auto">
@@ -148,6 +149,8 @@
                   asymmetrical gentrify.
                 </p>
               </div>
+              <form method="post">
+              
               <div class="lg:w-1/2 md:w-2/3 mx-auto">
                 <div class="flex flex-wrap -m-2">
                   </div>
@@ -166,27 +169,36 @@
                     </div>
                   </div>
                   <div class="p-2 w-full">
-                    <button
-                      class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                    >
+                    <button type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" name="post">
                       Button
                     </button>
                   </div>
                   </div>
                 </div>
+                <div class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 mx-6">
+        <?php 
+        
+        include "../backend/post.php";
+        ?>
+        
+        </div>
               </div>
+              </form>
+              
             </div>
           </section>
         </div>
+        
+        
         <div class="">
           <div class="">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
+            <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
             obcaecati nobis commodi, ratione iusto dolore explicabo, totam nemo
             at, neque quisquam consectetur. Recusandae mollitia animi vero
             suscipit laudantium commodi. Aliquam. Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Debitis non alias facilis ex expedita
             voluptatem aspernatur nostrum? Molestiae voluptatem earum culpa
-            debitis, aliquid assumenda, nihil ut maxime rem cumque tenetur.
+            debitis, aliquid assumenda, nihil ut maxime rem cumque tenetur. -->
        
           </div>
         </div>
