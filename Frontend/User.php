@@ -1,193 +1,75 @@
-<?php 
-        
-        include "../backend/post.php";
-        ?>
+<?php
+include "../backend/post.php";
 
-<!DOCTYPE html>
+?>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>Document</title>
-    <link rel="stylesheet" href="Styles/User.css" />
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <!-- component -->
-    <nav
-      class="flex items-center justify-between flex-wrap bg-white py-4 lg:px-12 shadow border-solid border-t-2 border-blue-700"
-    >
-      <div
-        class="flex justify-between lg:w-auto w-full lg:border-b-0 pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0"
-      >
-        <div class="flex items-center flex-shrink-0 text-gray-800 mr-16">
-          <span class="font-semibold text-xl tracking-tight">My Navbar</span>
-        </div>
-        <div class="block lg:hidden">
-          <button
-            id="hamburger"
-            class="flex items-center px-3 py-2 border-2 rounded text-blue-700 border-blue-700 hover:text-blue-700 hover:border-blue-700 "
-          >
-            <svg
-              class="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
-      </div>
 
-      <div
-        class="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8 toggle hidden"
-      >
-        <div class="text-md font-bold text-blue-700 lg:flex-grow">
-          <a
-            href="#responsive-header"
-            class="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
-          >
-            Menu 1
-          </a>
-          <a
-            href="#responsive-header"
-            class="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
-          >
-            Menu 2
-          </a>
-          <a
-            href="#responsive-header"
-            class="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
-          >
-            Menu 3
-          </a>
-        </div>
-        <!-- This is an example component -->
-        <div class="relative mx-auto text-gray-600 lg:block hidden">
-          <input
-            class="border-2 border-gray-300 bg-white h-10 pl-2 pr-8 rounded-lg text-sm focus:outline-none"
-            type="search"
-            name="search"
-            placeholder="Search"
-          />
-          <button type="submit" class="absolute right-0 top-0 mt-3 mr-2">
-            <svg
-              class="text-gray-600 h-4 w-4 fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              id="Capa_1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 56.966 56.966"
-              style="enable-background: new 0 0 56.966 56.966"
-              xml:space="preserve"
-              width="512px"
-              height="512px"
-            >
-              <path
-                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
-              />
-            </svg>
-          </button>
-        </div>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-          <a
-            href="#"
-            class="block text-md px-4 ml-2 py-2 rounded text-blue-700 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0"
-            >Logout</a
-          >
-        </div>
-      </div>
-    </nav>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <!-- Navbar ends here -->
+    <title>SocialMedia</title>
+</head>
 
-    <!-- Main content -->
-    <main style="background-color:white;">
-      <div class="">
-        <div class="">
-          <div class="">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-            obcaecati nobis commodi, ratione iusto dolore explicabo, totam nemo
-            at, neque quisquam consectetur. Recusandae mollitia animi vero
-            suscipit laudantium commodi. Aliquam. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Debitis non alias facilis ex expedita
-            voluptatem aspernatur nostrum? Molestiae voluptatem earum culpa
-            debitis, aliquid assumenda, nihil ut maxime rem cumque tenetur.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequatur, atque vero repellat a non vel illo voluptatibus
-            temporibus deserunt, recusandae ut itaque maiores praesentium
-            quibusdam at! Quae animi omnis consectetur! Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Quae error delectus, nostrum ab
-            necessitatibus nobis magnam, earum tempore, sunt itaque dolores
-            blanditiis dicta quasi eius inventore praesentium quibusdam omnis
-            id.
-          </div>
-        </div>
-        
-        <div class="">
-          <section class="text-gray-600 body-font relative">
-            <div class="container px-5 py-24 mx-auto">
-              <div class="flex flex-col text-center w-full mb-12">
-              </div>
-              <form method="post">
-              
-              <div class="lg:w-1/2 md:w-2/3 mx-auto">
-                <div class="flex flex-wrap -m-2">
-                  </div>
-                  <div class="p-2 w-full">
-                    <div class="relative">
-                      <textarea
-                        id="message"
-                        name="message"
-                        placeholder="Write what you feel like..."
-                        class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="p-2 w-full">
-                    <button type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" name="post">
-                      Post
-                    </button>
-                  </div>
-                  </div>
-                </div>
-                <div class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 mx-6">
-                <?php 
-        
-        include "../backend/userpost.php";
-        ?>
-        
-        </div>
-              </div>
-              </form>
-              
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">socialBook</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-          </section>
         </div>
-        
-        
-        <div class="">
-          <div class="">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-            obcaecati nobis commodi, ratione iusto dolore explicabo, totam nemo
-            at, neque quisquam consectetur. Recusandae mollitia animi vero
-            suscipit laudantium commodi. Aliquam. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Debitis non alias facilis ex expedita
-            voluptatem aspernatur nostrum? Molestiae voluptatem earum culpa
-            debitis, aliquid assumenda, nihil ut maxime rem cumque tenetur.
-        
-          </div>
+    </nav>
+    <form class="my-4 container" method="post">
+        <div class="form-floating my-4">
+            <textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
         </div>
-      </div>
-    </main>
-    <!-- Main content ends here -->
+        <button class="btn btn-outline-success" name="post" type="submit">Post</button>
+    </form>
+    <div class="container">
+        <?php
+    include "../backend/userpost.php";
+    ?>
+    </div>
 
-    <!-- end -->
 
-    <script type="text/javascript" src="JS/loader.js"></script>
-  </body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
 </html>

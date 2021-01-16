@@ -1,11 +1,11 @@
 <?php
 
 
-$severname="localhost";
+$servername="localhost";
 $username="root";
 $password="";
 $database="socialMedia";
 
-$con=mysqli_connect($severname,$username,$password,$database);
+$con=mysqli_connect($servername,$username,$password,$database);
 
 ?>

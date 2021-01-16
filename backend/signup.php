@@ -25,12 +25,13 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 
         if($result){
             echo "Your Account has been created";
+            echo "<script>window.location.href='Login.php'</script>";
         }
         else{
             echo "Please try again";
         }
 
-        $s="CREATE TABLE `expense`.`$email` ( `sr no` INT NOT NULL AUTO_INCREMENT ,  `message` TEXT NOT NULL ,  `time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,    PRIMARY KEY  (`sr no`)) ENGINE = InnoDB;";
+        $s="CREATE TABLE `socialMedia`.`$email` ( `sr no` INT NOT NULL AUTO_INCREMENT ,  `message` TEXT NOT NULL ,  `time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,    PRIMARY KEY  (`sr no`)) ENGINE = InnoDB;";
    
         $exe=mysqli_query($con,$s);
     }
