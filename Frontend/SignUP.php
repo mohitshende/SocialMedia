@@ -4,45 +4,57 @@
     
     ?>
 
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
-    <head>
-        <title>Document</title>
-        <link rel="stylesheet" href="Styles/Login.css" />
-    </head>
+<head>
+    <link rel="stylesheet" href="Styles/Login.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <body>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-        <div class="outer-box">
-            <form method="post">
-                <div class="inner-box">
-                    <h1>SignUP</h1>
+    <title>Document</title>
+</head>
 
-                    <input type="text" placeholder="Email" name="email" />
+<body>
 
-                    <input type="password" placeholder="Password" name="password" />
-                    <br />
+    <div class="outer-box">
+        <form method="post">
+            <div class="inner-box">
+                <h1>SignUP</h1>
 
-                    <label> <input type="checkbox" /> Remember me </label>
+                <input type="text" placeholder="Email" name="email" />
 
-                    <br />
+                <input type="password" placeholder="Password" name="password" />
+                <br />
 
-                    <button type="submit" class="btn" name="button">SignUP</button>
-                    <div class="txt">Or login with</div>
-                    <div class="smbtn">
-                        <div id="customBtn">
-                            <span class="icon"></span>
-                            <span class="buttonText">Facebook</span>
-                        </div>
-                        <div id="customBtn2">
-                            <span class="icon2"></span>
-                            <span class="buttonText2">Google</span>
-                        </div>
+                <label> <input type="checkbox" /> Remember me </label>
+
+                <br />
+
+                <button type="submit" class="btn" name="button">SignUP</button>
+                <div class="txt">Or login with</div>
+                <div class="smbtn">
+                    <div id="customBtn">
+                        <span class="icon"></span>
+                        <span class="buttonText">Facebook</span>
+                    </div>
+                    <div id="customBtn2">
+                        <span class="icon2"></span>
+                        <span class="buttonText2">Google</span>
                     </div>
                 </div>
-            </form>
-        </div>
-    </body>
+            </div>
+        </form>
+    </div>
 
-    </html>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+</script>
+
+</html>

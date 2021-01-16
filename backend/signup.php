@@ -15,7 +15,9 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $num=mysqli_num_rows($result);
 
     if($num>0){
-        echo "User email Already exists";
+        echo "<div class='alert alert-warning' role='alert'>
+        Account already exists
+      </div>";
 
     }
     else{

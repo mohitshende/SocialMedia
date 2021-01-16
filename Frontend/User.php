@@ -1,6 +1,11 @@
 <?php
 include "../backend/post.php";
 
+if(!isset($_SESSION['email'])){
+    echo "<script>window.location.href='Login.php'</script>";
+
+}
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,7 +18,6 @@ include "../backend/post.php";
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
     <title>SocialMedia</title>
 </head>
 
@@ -40,6 +44,15 @@ include "../backend/post.php";
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                <li class="nav-item dropdown d-flex">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" name="logout" href="../backend/logout.php">Logout</a></li>
+                    </ul>
+                </li>
             </div>
         </div>
     </nav>
@@ -47,7 +60,7 @@ include "../backend/post.php";
         <div class="form-floating my-4">
             <textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2"
                 style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Comments</label>
+            <label for="floatingTextarea2">Write what you like ...</label>
         </div>
         <button class="btn btn-outline-success" name="post" type="submit">Post</button>
     </form>
