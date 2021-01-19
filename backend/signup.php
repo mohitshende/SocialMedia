@@ -26,7 +26,9 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         $result=mysqli_query($con,$sql);
 
         if($result){
-            echo "Your Account has been created";
+            echo "<div class='alert alert-success' role='alert'>
+            Your Account has been created
+            </div>";
             echo "<script>window.location.href='Login.php'</script>";
         }
         else{

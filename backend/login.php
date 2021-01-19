@@ -23,16 +23,19 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                         //   $set=$_SESSION['email'];
                           
 
-                echo "<script>window.location.href='user.php'</script>";
+                echo "<script>window.location.href='Home.php'</script>";
             }
             else{
-                echo "Invalid crentials";
+                echo " <div class='alert alert-danger alert-dismissible fade show'>
+                <button type='button' class='close' data-dismiss='alert'>&times;</button>
+                <strong>Invalid Credentials</strong>
+              </div>";
             }
         }
 
     }
     else{
-        echo "You Dont Have any Account Please Create it";
+        echo "You don't have any account. Please create new account";
     }
 }
 
