@@ -1,6 +1,12 @@
 <?php
 
 include "dbconnect.php";
+session_start();
+
+if(isset($_SESSION['name'])){
+
+    echo '<script>window.location.href="Home.php"</script>';
+}
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
 
@@ -19,6 +25,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
             if($fetch['email']==$email && $fetch['password']==$password){
                 session_start();
                           $_SESSION['email']=$email;
+                          $_SESSION['name']=$fetch['name'];
 
                         //   $set=$_SESSION['email'];
                           
