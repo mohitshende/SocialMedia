@@ -12,8 +12,8 @@ if($num>0){
 
         echo '      
     <div class="card">
-            <h5 class="card-header">Fetch name here</h5>
-            <img class="card-img-top"  width="100%" height="180" src="">
+            <h5 class="card-header">'.$_SESSION["name"].'</h5>
+            <img class="card-img-top"  width="100%" height="180" src="UserImages/'.$fetch['filename'].'">
         <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">
