@@ -5,6 +5,7 @@ include "dbconnect.php";
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
 
+    $name=$_POST['fname'];
     $email=$_POST['email'];
     $password=$_POST['password'];
 
@@ -22,22 +23,24 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     }
     else{
 
-        $sql="INSERT INTO `user` (`email`, `password`) VALUES ('$email', '$password')";
+        $sql="INSERT INTO `user` (`name`, `email`, `password`) VALUES ('$name', '$email', '$password');";
         $result=mysqli_query($con,$sql);
 
         if($result){
             echo "<div class='alert alert-success' role='alert'>
             Your Account has been created
             </div>";
+            
+            $s="CREATE TABLE `socialmedia`.`$email` ( `sr no` INT NOT NULL AUTO_INCREMENT ,  `message` TEXT NOT NULL ,  `filename` VARCHAR(100) NOT NULL ,  `time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,    PRIMARY KEY  (`sr no`)) ENGINE = InnoDB;";
+        $exe=mysqli_query($con,$s);
+        
             echo "<script>window.location.href='Login.php'</script>";
         }
         else{
             echo "Please try again";
         }
 
-        $s="CREATE TABLE `socialMedia`.`$email` ( `sr no` INT NOT NULL AUTO_INCREMENT ,  `message` TEXT NOT NULL ,  `time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,    PRIMARY KEY  (`sr no`)) ENGINE = InnoDB;";
-   
-        $exe=mysqli_query($con,$s);
+        
     }
 
 }
