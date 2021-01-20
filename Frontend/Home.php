@@ -61,11 +61,12 @@ if(!isset($_SESSION['email'])){
         </div>
     </nav>
 
-    <form class="my-4 container" method="post">
+    <form class="my-4 container" method="post" enctype="multipart/form-data">
         <div class="form-floating my-4">
             <textarea class="form-control" name="message" placeholder="Write what you like ..." id="floatingTextarea2"
                 style="height: 100px"></textarea>
             <!-- <label for="floatingTextarea2"></label> -->
+            <input type="file" name="uploadfile" value=""/> 
         </div>
         <button class="btn btn-outline-success" name="post" type="submit">Post</button>
     </form>
