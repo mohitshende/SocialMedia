@@ -18,6 +18,7 @@ if(!isset($_SESSION['email'])){
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Social</title>
 </head>
 
@@ -61,12 +62,12 @@ if(!isset($_SESSION['email'])){
         </div>
     </nav>
 
-    <form class="my-4 container" method="post" enctype="multipart/form-data">
+    <form class="my-4 container shadow" method="post" enctype="multipart/form-data">
         <div class="form-floating my-4">
             <textarea class="form-control" name="message" placeholder="Write what you like ..." id="floatingTextarea2"
                 style="height: 100px"></textarea>
-            <!-- <label for="floatingTextarea2"></label> -->
-            <input type="file" name="uploadfile" value=""/> 
+
+            <input type="file" name="uploadfile" value="" />
         </div>
         <button class="btn btn-outline-success" name="post" type="submit">Post</button>
     </form>
