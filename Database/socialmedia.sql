@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 20, 2021 at 07:26 AM
+-- Generation Time: Jan 22, 2021 at 08:52 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -49,6 +49,7 @@ INSERT INTO `posts` (`sr no`, `message`, `time`) VALUES
 
 CREATE TABLE `rnrathod@mitaoe.ac.in` (
   `sr no` int(11) NOT NULL,
+  `heading` text NOT NULL,
   `message` text NOT NULL,
   `filename` varchar(100) NOT NULL,
   `time` timestamp NOT NULL DEFAULT current_timestamp()
@@ -58,29 +59,9 @@ CREATE TABLE `rnrathod@mitaoe.ac.in` (
 -- Dumping data for table `rnrathod@mitaoe.ac.in`
 --
 
-INSERT INTO `rnrathod@mitaoe.ac.in` (`sr no`, `message`, `filename`, `time`) VALUES
-(4, 'Hello Ritesh This is a testing process to check the Image', 'wp2902275-black-and-green-wallpaper-hd.jpg', '2021-01-20 06:17:36');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `s@gmail.com`
---
-
-CREATE TABLE `s@gmail.com` (
-  `sr no` int(11) NOT NULL,
-  `message` text NOT NULL,
-  `filename` varchar(100) NOT NULL,
-  `time` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `s@gmail.com`
---
-
-INSERT INTO `s@gmail.com` (`sr no`, `message`, `filename`, `time`) VALUES
-(1, 'Hello This is anothet', 'wp2727716-wallpaper-black-green.jpg', '2021-01-20 06:22:15'),
-(2, 'This is another Test', '1.jpg', '2021-01-20 06:23:37');
+INSERT INTO `rnrathod@mitaoe.ac.in` (`sr no`, `heading`, `message`, `filename`, `time`) VALUES
+(2, 'New Feature', 'Hello Everyone this is new feature with heading and post Ordering', '2101211836111.jpg', '2021-01-21 17:36:11'),
+(3, 'Open Source', 'This is an open source project', '220121085117r.png', '2021-01-22 07:51:17');
 
 -- --------------------------------------------------------
 
@@ -100,8 +81,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`srno.`, `name`, `email`, `password`) VALUES
-(13, 'RITESH RATHOD', 'rnrathod@mitaoe.ac.in', 'r'),
-(14, 'rnrathod', 's@gmail.com', 's');
+(17, 'RITESH RATHOD', 'rnrathod@mitaoe.ac.in', 'r');
 
 --
 -- Indexes for dumped tables
@@ -117,12 +97,6 @@ ALTER TABLE `posts`
 -- Indexes for table `rnrathod@mitaoe.ac.in`
 --
 ALTER TABLE `rnrathod@mitaoe.ac.in`
-  ADD PRIMARY KEY (`sr no`);
-
---
--- Indexes for table `s@gmail.com`
---
-ALTER TABLE `s@gmail.com`
   ADD PRIMARY KEY (`sr no`);
 
 --
@@ -145,19 +119,13 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for table `rnrathod@mitaoe.ac.in`
 --
 ALTER TABLE `rnrathod@mitaoe.ac.in`
-  MODIFY `sr no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `s@gmail.com`
---
-ALTER TABLE `s@gmail.com`
-  MODIFY `sr no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `sr no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `srno.` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `srno.` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
