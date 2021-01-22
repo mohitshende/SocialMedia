@@ -2,7 +2,24 @@
 // include "post.php";
 // include "postdelet.php";
 
-$sql="SELECT * FROM `$set`";
+if(isset($_POST['delet'])){
+    $sql="SELECT * FROM `$set`";
+
+$result=mysqli_query($con,$sql);
+
+$num=mysqli_num_rows($result);
+
+    if($num>0){
+        while($fetch=mysqli_fetch_assoc($result)){
+
+
+        $sql= "DELETE FROM `$set` WHERE `$set`.`sr no` ='".$fetch['sr no']."'";
+        $result=mysqli_query($con,$sql);
+    }
+}
+}
+
+$sql="SELECT * FROM `$set` ORDER BY `time` DESC";
 
 $result=mysqli_query($con,$sql);
 
@@ -26,8 +43,14 @@ if($num>0){
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="#">Edit</a>
               <a class="dropdown-item" href="#">For other options</a>
+              <form method="post" enctype="multipart/form-data">
+              <button class="btn btn-outline-success" name="delet" type="submit">Delete</button>
+              </form>
+
               
-              <a class="dropdown-item" href="../backend/postdelete.php" >Delete</a>
+            
+
+              
            
             
             </div>
@@ -35,14 +58,15 @@ if($num>0){
 
 
             </div>
-            <img class="card-img-top"  width="10" height="180" src="UserImages/'.$fetch['filename'].'">
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
+            <div class="card-body">
+            <h5 class="card-title">'.$fetch['heading'].'</h5>
             <p class="card-text">
                 '.$fetch["message"].'                          
             </p>
             <h6 class="card-subtitle mb-2 text-muted"> '.$fetch["time"].' </h6>  
         </div>
+            <img class="card-img-top"  width="10" height="180" src="UserImages/'.$set.'/'.$fetch['filename'].'">
+        
     </div>';
 
 
