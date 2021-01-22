@@ -31,8 +31,10 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
             Your Account has been created
             </div>";
             
-            $s="CREATE TABLE `socialmedia`.`$email` ( `sr no` INT NOT NULL AUTO_INCREMENT ,  `message` TEXT NOT NULL ,  `filename` VARCHAR(100) NOT NULL ,  `time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,    PRIMARY KEY  (`sr no`)) ENGINE = InnoDB;";
-        $exe=mysqli_query($con,$s);
+            // $s="CREATE TABLE `socialmedia`.`$email` ( `sr no` INT NOT NULL AUTO_INCREMENT ,  `message` TEXT NOT NULL ,  `filename` VARCHAR(100) NOT NULL ,  `time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,    PRIMARY KEY  (`sr no`)) ENGINE = InnoDB;";
+            $s="CREATE TABLE `socialmedia`.`$email` ( `sr no` INT NOT NULL AUTO_INCREMENT ,  `heading` TEXT NOT NULL ,  `message` TEXT NOT NULL ,  `filename` VARCHAR(100) NOT NULL ,  `time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,    PRIMARY KEY  (`sr no`)) ENGINE = InnoDB;";
+        
+            $exe=mysqli_query($con,$s);
         
             echo "<script>window.location.href='Login.php'</script>";
         }
