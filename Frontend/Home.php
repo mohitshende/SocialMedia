@@ -38,6 +38,11 @@ if(!isset($_SESSION['email'])){
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                 </li>
+                <li class="nav-item">
+                <h5 class="mx-5 my-2"style="color:white;"><?php echo "Hii, ".$_SESSION['name'];?></h5>
+                </li>
+
+                
 
             </ul>
             <form class="form-inline my-2 my-lg-0 ">
@@ -64,12 +69,13 @@ if(!isset($_SESSION['email'])){
 
     <form class="my-4 container shadow" method="post" enctype="multipart/form-data">
         <div class="form-floating my-4">
+        <input class="form-control my-2" type="text" name="heading" placeholder="Write the Post Heading">
             <textarea class="form-control" name="message" placeholder="Write what you like ..." id="floatingTextarea2"
                 style="height: 100px"></textarea>
 
-            <input type="file" name="uploadfile" value="" />
+            <input class="my-2" type="file" name="uploadfile" value="" />
         </div>
-        <button class="btn btn-outline-success" name="post" type="submit">Post</button>
+        <button class="btn btn-outline-success my-2" name="post" type="submit">Post</button>
     </form>
     <div class="container">
         <?php
