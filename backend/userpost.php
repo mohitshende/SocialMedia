@@ -29,13 +29,13 @@ if($num>0){
     while($fetch=mysqli_fetch_assoc($result)){
 
         echo '      
-    <div class="card my-4 shadow ">
+    <div class="card my-4 shadow" >
     <div class="card-header d-flex justify-content-between">
             <h5 class="my-auto">'.$_SESSION["name"].'</h5>
             
             
             <div class="dropdown dropleft " style="float:right;">
-            <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="btn three-dots" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="bi bi-three-dots-vertical"></i> 
               
             </a>
@@ -44,15 +44,8 @@ if($num>0){
               <a class="dropdown-item" href="#">Edit</a>
               <a class="dropdown-item" href="#">For other options</a>
               <form method="post" enctype="multipart/form-data">
-              <button class="btn btn-outline-success" name="delet" type="submit">Delete</button>
-              </form>
-
-              
-            
-
-              
-           
-            
+              <button class="dropdown-item" name="delet" type="submit">Delete</button>
+              </form>            
             </div>
           </div>
 
