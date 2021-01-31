@@ -148,31 +148,9 @@ if(!isset($_SESSION['email'])){
             </div>
             <div class="sidebar bg-secondary">
                 <div class="vertical-menu">
-
-                    <div class="prsec">
-                        <div class="py-2 d-flex flex-row align-items-center justify-content-between">
-                            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
-                                style="width:70px;border-radius: 50%;">
-                            <h3>Username</h2>
-                        </div>
-                        <div class="d-flex flex-row justify-content-center">
-                            <a href="" class="btn btn-secondary mr-2"><i class="bi bi-person-plus-fill"></i></a>
-                            <a href="" class="btn btn-secondary"><i class="bi bi-chat-left-fill"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="prsec">
-                        <div class="py-2 d-flex flex-row align-items-center justify-content-between">
-                            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
-                                style="width:70px;border-radius: 50%;">
-                            <h3>Username</h2>
-                        </div>
-                        <div class="d-flex flex-row justify-content-center">
-                            <a href="" class="btn btn-secondary mr-2"><i class="bi bi-person-plus-fill"></i></a>
-                            <a href="" class="btn btn-secondary"><i class="bi bi-chat-left-fill"></i></a>
-                        </div>
-                    </div>
-
+                    <?php
+    include "../backend/users.php";
+    ?>
                 </div>
             </div>
         </div>
