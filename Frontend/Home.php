@@ -1,9 +1,8 @@
 <?php
 include "../backend/post.php";
 
-if(!isset($_SESSION['email'])){
+if (!isset($_SESSION['email'])) {
     echo "<script>window.location.href='Login.php'</script>";
-
 }
 
 ?>
@@ -37,6 +36,7 @@ if(!isset($_SESSION['email'])){
         /* Scrollable contents if viewport is shorter than content. */
         background-color: #f5f5f5;
         border-right: 1px solid #eee;
+        /* box-shadow: 0px 0px 10px #232931; */
     }
 
     @media (min-width: 768px) {
@@ -53,7 +53,7 @@ if(!isset($_SESSION['email'])){
     }
 
     .vertical-menu .prsec {
-        background-color: #eee;
+        background-color: #fff;
         /* Grey background color */
         color: black;
         /* Black text color */
@@ -79,6 +79,10 @@ if(!isset($_SESSION['email'])){
     .prsec {
         border-bottom: 4px solid #4CAF50;
     }
+
+    nav {
+        box-shadow: 0px 0px 10px #232931;
+    }
     </style>
     <title>Social</title>
 </head>
@@ -100,7 +104,7 @@ if(!isset($_SESSION['email'])){
                     <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item">
-                    <h5 class="mx-5 my-2" style="color:white;"><?php echo "Hii, ".$_SESSION['name'];?></h5>
+                    <h5 class="mx-5 my-2" style="color:white;"><?php echo "Hii, " . $_SESSION['name']; ?></h5>
                 </li>
 
             </ul>
@@ -142,15 +146,16 @@ if(!isset($_SESSION['email'])){
                 </form>
                 <div class="container">
                     <?php
-    include "../backend/userpost.php";
-    ?>
+                    include "../backend/userpost.php";
+                    ?>
                 </div>
             </div>
-            <div class="sidebar bg-secondary">
+            <!-- Sidebar -->
+            <div class="sidebar bg-secondary shadow-lg">
                 <div class="vertical-menu">
                     <?php
-    include "../backend/users.php";
-    ?>
+                    include "../backend/users.php";
+                    ?>
                 </div>
             </div>
         </div>
